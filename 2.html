@@ -16,9 +16,60 @@
     table
      { border-collapse: collapse;}
 
-table, td, th
-{ border: 1px solid black;}
-    </style>
+     table, td, th
+     { border: 1px solid black;}
+         </style>
+
+         <style media="screen">
+           a{
+             color: black;
+           }
+         </style>
+
+         <style>
+         body{
+         margin:0;
+         }
+         a {
+         color:black;
+         text-decoration: none;
+         }
+         h1 {
+         font-size:45px;
+         text-align: center;
+         border-bottom:1px solid gray;
+         margin:0;
+         padding:20px;
+         }
+         ul{
+         border-right:1px solid gray;
+         width:100px;
+         margin:0;
+         padding:20px;
+         }
+         #grid{
+         display: grid;
+         grid-template-columns: 150px 1fr;
+         }
+         #grid ul{
+         padding-left:33px;
+         }
+         #grid #article{
+         padding-left:25px;
+         }
+         @media(max-width:800px){
+         #grid{
+         display: block;
+         }
+         ul{
+         border-right:none;
+         }
+         h1 {
+         border-bottom:none;
+         }
+         }
+         </style>
+
 
   </head>
   <body>
@@ -29,20 +80,23 @@ table, td, th
       }
     </style>
 
+
+
     <h1 style="text-align:center;"><a href="index.html">내가 좋아하는 것들</a></h1>
+  <div id="grid">
 
-<hr>
-
-  <ul>
-    <li><a href="1.html"style="color: green">영화</a></li>
-    <li><a href="2.html"style="color: green">드라마</a></li>
-    <li><a href="3.html"style="color: green">음식<a/></li>
-  </ul>
+    <ul>
+      <li><a href="1.html"style="color: green">영화</a></li>
+      <li><a href="2.html"style="color: green">드라마</a></li>
+      <li><a href="3.html"style="color: green">음식<a/></li>
+    </ul>
+    <div id="article">
 
     <h2>드라마</h2>
 
    <h4>호텔 델루나</h4>
    <img src="hotel.jpg" alt="hotel">
+
 
       <p>엘리트 호텔리어가 운명적인 사건으로 호텔 델루나의 지배인을 맡게 되면서 달처럼 고고하고 아름답지만 괴팍한 사장과 함께 델루나를 운영하며 생기는 특별한 이야기를 그린 드라마</p>
       <table>
@@ -107,5 +161,9 @@ table, td, th
             <td>HD 제작 · 방송</td>
           </tr>
 
+   <iframe width="600" height="400" src="https://www.youtube.com/embed/BMtUOlYHYmY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+ </div>
+ </div>
 </body>
 </html>

@@ -1,27 +1,71 @@
-
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>음식</title>
-    <style media="screen">
-      a{
-        color: black;
-      }
-    </style>
+   <title>영화</title>
+
+   <style media="screen">
+     a{
+       color: black;
+     }
+   </style>
+
+   <style>
+   body{
+   margin:0;
+   }
+   a {
+   color:black;
+   text-decoration: none;
+   }
+   h1 {
+   font-size:45px;
+   text-align: center;
+   border-bottom:1px solid gray;
+   margin:0;
+   padding:20px;
+   }
+   ul{
+   border-right:1px solid gray;
+   width:100px;
+   margin:0;
+   padding:20px;
+   }
+   #grid{
+   display: grid;
+   grid-template-columns: 150px 1fr;
+   }
+   #grid ul{
+   padding-left:33px;
+   }
+   #grid #article{
+   padding-left:25px;
+   }
+   @media(max-width:800px){
+   #grid{
+   display: block;
+   }
+   ul{
+   border-right:none;
+   }
+   h1 {
+   border-bottom:none;
+   }
+   }
+   </style>
+
   </head>
   <body>
 
+<h1 style="text-align:center;"><a href="index.html">내가 좋아하는 것들</a></h1>
+<div id="grid">
 
-    <h1 style="text-align:center;"><a href="index.html">내가 좋아하는 것들</a></h1>
-
-<hr>
-
-  <ul>
-    <li><a href="1.html"style="color: green">영화</a></li>
-    <li><a href="2.html"style="color: green">드라마</a></li>
-    <li><a href="3.html"style="color: green">음식<a/></li>
-  </ul>
+<ul>
+  <li><a href="1.html"style="color: green">영화</a></li>
+  <li><a href="2.html"style="color: green">드라마</a></li>
+  <li><a href="3.html"style="color: green">음식<a/></li>
+</ul>
+<div id="article">
 
 <h2>음식</h2>
 <h4>훠궈</h4>
@@ -33,6 +77,7 @@
 소스는 마장이라고 불리는 땅콩소스가 가장 대중적이며, 여러가지 소스가 특색을 내게 해 준다.
 큰 세수대야처럼 생긴 커다란 용기에 태극 모양으로 한가운데를 나눠 한쪽엔 하얀 국물을, 한쪽엔 빨간 국물을 담는다. 하얀 국물(백탕)에는 돼지사골, 닭 등으로 우려낸 육수에 각종 약재를 넣어 끓이고, 홍탕에는 육수에 고추, 후추, 고추기름을 넣어 끓인다. 백탕은 담백한 맛, 홍탕은 매운 맛을 지니고 있는데, 이 육수가 끓으면 고기(주로 양고기), 야채(배추, 시금치, 팽이버섯, 감자 등) 등을 넣어 끓여 낸다.</p>
 
-
+</div>
+</div>
 </body>
 </html>
